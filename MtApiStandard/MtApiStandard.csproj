@@ -1,0 +1,96 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\MtApi\ChartEventArgs.cs" Link="ChartEventArgs.cs" />
+    <Compile Include="..\MtApi\ChartPeriod.cs" Link="ChartPeriod.cs" />
+    <Compile Include="..\MtApi\EnumAlignMode.cs" Link="EnumAlignMode.cs" />
+    <Compile Include="..\MtApi\EnumChartEvent.cs" Link="EnumChartEvent.cs" />
+    <Compile Include="..\MtApi\EnumChartPropertyDouble.cs" Link="EnumChartPropertyDouble.cs" />
+    <Compile Include="..\MtApi\EnumChartPropertyInteger.cs" Link="EnumChartPropertyInteger.cs" />
+    <Compile Include="..\MtApi\EnumChartPropertyString.cs" Link="EnumChartPropertyString.cs" />
+    <Compile Include="..\MtApi\EnumColorFormat.cs" Link="EnumColorFormat.cs" />
+    <Compile Include="..\MtApi\EnumObject.cs" Link="EnumObject.cs" />
+    <Compile Include="..\MtApi\EnumObjectPropertyDouble.cs" Link="EnumObjectPropertyDouble.cs" />
+    <Compile Include="..\MtApi\EnumObjectPropertyInteger.cs" Link="EnumObjectPropertyInteger.cs" />
+    <Compile Include="..\MtApi\EnumObjectPropertyString.cs" Link="EnumObjectPropertyString.cs" />
+    <Compile Include="..\MtApi\EnumSeriesInfoInteger.cs" Link="EnumSeriesInfoInteger.cs" />
+    <Compile Include="..\MtApi\EnumSymbolInfoDouble.cs" Link="EnumSymbolInfoDouble.cs" />
+    <Compile Include="..\MtApi\EnumSymbolInfoInteger.cs" Link="EnumSymbolInfoInteger.cs" />
+    <Compile Include="..\MtApi\EnumTerminalInfoDouble.cs" Link="EnumTerminalInfoDouble.cs" />
+    <Compile Include="..\MtApi\EnumTerminalInfoInteger.cs" Link="EnumTerminalInfoInteger.cs" />
+    <Compile Include="..\MtApi\FlagFontStyle.cs" Link="FlagFontStyle.cs" />
+    <Compile Include="..\MtApi\MarketInfoModeType.cs" Link="MarketInfoModeType.cs" />
+    <Compile Include="..\MtApi\Monitors\AvailabilityOrdersEventArgs.cs" Link="Monitors\AvailabilityOrdersEventArgs.cs" />
+    <Compile Include="..\MtApi\Monitors\TimeframeTradeMonitor.cs" Link="Monitors\TimeframeTradeMonitor.cs" />
+    <Compile Include="..\MtApi\Monitors\TimerTradeMonitor.cs" Link="Monitors\TimerTradeMonitor.cs" />
+    <Compile Include="..\MtApi\Monitors\TradeMonitor.cs" Link="Monitors\TradeMonitor.cs" />
+    <Compile Include="..\MtApi\MqlRates.cs" Link="MqlRates.cs" />
+    <Compile Include="..\MtApi\MqlTick.cs" Link="MqlTick.cs" />
+    <Compile Include="..\MtApi\MtApiClient.cs" Link="MtApiClient.cs" />
+    <Compile Include="..\MtApi\MtApiColorConverter.cs" Link="MtApiColorConverter.cs" />
+    <Compile Include="..\MtApi\MtApiTimeConverter.cs" Link="MtApiTimeConverter.cs" />
+    <Compile Include="..\MtApi\MtChartEvent.cs" Link="MtChartEvent.cs" />
+    <Compile Include="..\MtApi\MtCommandType.cs" Link="MtCommandType.cs" />
+    <Compile Include="..\MtApi\MtConnectionEventArgs.cs" Link="MtConnectionEventArgs.cs" />
+    <Compile Include="..\MtApi\MtConnectionException.cs" Link="MtConnectionException.cs" />
+    <Compile Include="..\MtApi\MtConnectionState.cs" Link="MtConnectionState.cs" />
+    <Compile Include="..\MtApi\MtErrorCode.cs" Link="MtErrorCode.cs" />
+    <Compile Include="..\MtApi\MtEventTypes.cs" Link="MtEventTypes.cs" />
+    <Compile Include="..\MtApi\MtExecutionException.cs" Link="MtExecutionException.cs" />
+    <Compile Include="..\MtApi\MtOrder.cs" Link="MtOrder.cs" />
+    <Compile Include="..\MtApi\MtQuote.cs" Link="MtQuote.cs" />
+    <Compile Include="..\MtApi\MtQuoteEventArgs.cs" Link="MtQuoteEventArgs.cs" />
+    <Compile Include="..\MtApi\MtSession.cs" Link="MtSession.cs" />
+    <Compile Include="..\MtApi\MtTimeBar.cs" Link="MtTimeBar.cs" />
+    <Compile Include="..\MtApi\MtTypes.cs" Link="MtTypes.cs" />
+    <Compile Include="..\MtApi\OrderSelectMode.cs" Link="OrderSelectMode.cs" />
+    <Compile Include="..\MtApi\OrderSelectSource.cs" Link="OrderSelectSource.cs" />
+    <Compile Include="..\MtApi\PriceConstantsType.cs" Link="PriceConstantsType.cs" />
+    <Compile Include="..\MtApi\Requests\CopyRatesRequest.cs" Link="Requests\CopyRatesRequest.cs" />
+    <Compile Include="..\MtApi\Requests\GetOrderRequest.cs" Link="Requests\GetOrderRequest.cs" />
+    <Compile Include="..\MtApi\Requests\GetOrdersRequest.cs" Link="Requests\GetOrdersRequest.cs" />
+    <Compile Include="..\MtApi\Requests\ICustomRequest.cs" Link="Requests\ICustomRequest.cs" />
+    <Compile Include="..\MtApi\Requests\OrderCloseByRequest.cs" Link="Requests\OrderCloseByRequest.cs" />
+    <Compile Include="..\MtApi\Requests\OrderCloseRequest.cs" Link="Requests\OrderCloseRequest.cs" />
+    <Compile Include="..\MtApi\Requests\OrderDeleteRequest.cs" Link="Requests\OrderDeleteRequest.cs" />
+    <Compile Include="..\MtApi\Requests\OrderModifyRequest.cs" Link="Requests\OrderModifyRequest.cs" />
+    <Compile Include="..\MtApi\Requests\OrderSendRequest.cs" Link="Requests\OrderSendRequest.cs" />
+    <Compile Include="..\MtApi\Requests\RequestBase.cs" Link="Requests\RequestBase.cs" />
+    <Compile Include="..\MtApi\Requests\RequestType.cs" Link="Requests\RequestType.cs" />
+    <Compile Include="..\MtApi\Requests\SeriesInfoIntegerRequest.cs" Link="Requests\SeriesInfoIntegerRequest.cs" />
+    <Compile Include="..\MtApi\Requests\SessionRequest.cs" Link="Requests\SessionRequest.cs" />
+    <Compile Include="..\MtApi\Requests\SymbolInfoDoubleRequest.cs" Link="Requests\SymbolInfoDoubleRequest.cs" />
+    <Compile Include="..\MtApi\Requests\SymbolInfoTickRequest.cs" Link="Requests\SymbolInfoTickRequest.cs" />
+    <Compile Include="..\MtApi\Responses\CopyRatesResponse.cs" Link="Responses\CopyRatesResponse.cs" />
+    <Compile Include="..\MtApi\Responses\GetOrderResponse.cs" Link="Responses\GetOrderResponse.cs" />
+    <Compile Include="..\MtApi\Responses\GetOrdersResponse.cs" Link="Responses\GetOrdersResponse.cs" />
+    <Compile Include="..\MtApi\Responses\ICustomResponse.cs" Link="Responses\ICustomResponse.cs" />
+    <Compile Include="..\MtApi\Responses\OrderSendResponse.cs" Link="Responses\OrderSendResponse.cs" />
+    <Compile Include="..\MtApi\Responses\ResponseBase.cs" Link="Responses\ResponseBase.cs" />
+    <Compile Include="..\MtApi\Responses\SeriesInfoIntegerResponse.cs" Link="Responses\SeriesInfoIntegerResponse.cs" />
+    <Compile Include="..\MtApi\Responses\SessionResponse.cs" Link="Responses\SessionResponse.cs" />
+    <Compile Include="..\MtApi\Responses\SymbolInfoDoubleResponse.cs" Link="Responses\SymbolInfoDoubleResponse.cs" />
+    <Compile Include="..\MtApi\Responses\SymbolInfoTickResponse.cs" Link="Responses\SymbolInfoTickResponse.cs" />
+    <Compile Include="..\MtApi\SeriesIdentifier.cs" Link="SeriesIdentifier.cs" />
+    <Compile Include="..\MtApi\TimeBarArgs.cs" Link="TimeBarArgs.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Monitors\" />
+    <Folder Include="Responses\" />
+    <Folder Include="Requests\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MTApiServiceStandard\MTApiServiceStandard.csproj" />
+  </ItemGroup>
+
+</Project>
