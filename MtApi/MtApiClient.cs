@@ -58,7 +58,7 @@ namespace MtApi
         ///<param name="port">Port of host connection (default 8222) </param>
         public void BeginConnect(int port)
         {
-            Task.Factory.StartNew(() => Connect(port));
+            Task.Factory.StartNew(() => Connect("127.0.0.1",port));
         }
 
         ///<summary>
@@ -2925,11 +2925,11 @@ namespace MtApi
             Connect(client);
         }
 
-        private void Connect(int port)
-        {
-            var client = new MtClient(port);
-            Connect(client);
-        }
+        //private void Connect(int port)
+        //{
+        //    var client = new MtClient(port);
+        //    Connect(client);
+        //}
 
         private void OnConnected()
         {

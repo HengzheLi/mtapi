@@ -5,15 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="MtApiProxy.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Include="..\MTApiService\ICommandManager.cs" Link="ICommandManager.cs" />
     <Compile Include="..\MTApiService\IDisposableChannel.cs" Link="IDisposableChannel.cs" />
     <Compile Include="..\MTApiService\IMetaTraderHandler.cs" Link="IMetaTraderHandler.cs" />
     <Compile Include="..\MTApiService\IMtApiServer.cs" Link="IMtApiServer.cs" />
     <Compile Include="..\MTApiService\ITaskExecutor.cs" Link="ITaskExecutor.cs" />
-    <Compile Include="..\MTApiService\LogConfigurator.cs" Link="LogConfigurator.cs" />
     <Compile Include="..\MTApiService\Mt5Expert.cs" Link="Mt5Expert.cs" />
-    <Compile Include="..\MTApiService\MtAdapter.cs" Link="MtAdapter.cs" />
-    <Compile Include="..\MTApiService\MtClient.cs" Link="MtClient.cs" />
     <Compile Include="..\MTApiService\MtCommand.cs" Link="MtCommand.cs" />
     <Compile Include="..\MTApiService\MtCommandEventArgs.cs" Link="MtCommandEventArgs.cs" />
     <Compile Include="..\MTApiService\MtCommandTask.cs" Link="MtCommandTask.cs" />
@@ -26,9 +27,7 @@
     <Compile Include="..\MTApiService\MtMqlTick.cs" Link="MtMqlTick.cs" />
     <Compile Include="..\MTApiService\MtMqlTradeRequest.cs" Link="MtMqlTradeRequest.cs" />
     <Compile Include="..\MTApiService\MtQuote.cs" Link="MtQuote.cs" />
-    <Compile Include="..\MTApiService\MtRegistryManager.cs" Link="MtRegistryManager.cs" />
     <Compile Include="..\MTApiService\MtResponse.cs" Link="MtResponse.cs" />
-    <Compile Include="..\MTApiService\MtService.cs" Link="MtService.cs" />
   </ItemGroup>
 
   <ItemGroup>
