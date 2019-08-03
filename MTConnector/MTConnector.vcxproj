@@ -162,6 +162,9 @@
     <EmbeddedResource Include="cl.resx" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Mohun.EAPlugin.Common\Mohun.EAPlugin.Common\Mohun.EAPlugin.Common.csproj">
+      <Project>{29184c36-c396-45f1-841e-72e3ed1e91ac}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\MTApiService\MTApiService.csproj">
       <Project>{de76d5c7-b99c-4467-8408-78173bdd84e0}</Project>
       <Private>false</Private>

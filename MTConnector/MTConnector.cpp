@@ -9,6 +9,7 @@
 
 using namespace System;
 using namespace MTApiService;
+using namespace Mohun::EAPlugin::Common;
 using namespace System::Runtime::InteropServices;
 using namespace System::Reflection;
 using namespace System::Security::Cryptography; 
@@ -41,11 +42,12 @@ template <typename T> T Execute(std::function<T()> func, wchar_t* err, T default
     return result;
 }
 
-_DLLAPI bool _stdcall initExpert(int expertHandle, int port, wchar_t* symbol, double bid, double ask, wchar_t* err)
+_DLLAPI bool _stdcall initExpert(wchar_t* expertName, int expertHandle, int port, wchar_t* symbol, double bid, double ask, wchar_t* err)
 {
-    return Execute<bool>([&expertHandle, &port, symbol, &bid, &ask]() {
-        auto expert = gcnew MtExpert(expertHandle, gcnew String(symbol), bid, ask, gcnew MT4Handler());
-        MtAdapter::GetInstance()->AddExpert(port, expert);
+    return Execute<bool>([expertName, &expertHandle, &port, symbol, &bid, &ask]() {
+        //auto expert =  gcnew MTHedgingExpert(expertHandle, gcnew String(symbol), bid, ask, gcnew MT4Handler());
+		auto expert = MTExpertFactory::CreateExpert(gcnew String(expertName), expertHandle, gcnew String(symbol), bid, ask, gcnew MT4Handler());
+		MtAdapter::GetInstance()->AddExpert(port, expert);
         return true;
     }, err, false);
 }
